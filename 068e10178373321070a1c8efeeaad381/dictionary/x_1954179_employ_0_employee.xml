@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="71a96c9b83b3321070a1c8efeeaad3aa" label="Employee" max_length="40" name="x_1954179_employ_0_employee" type="collection">
+        <element choice="3" label="Department" max_length="150" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="IT" sequence="0" value="it"/>
+                <element inactive_on_update="false" label="HR" sequence="1" value="hr"/>
+                <element inactive_on_update="false" label="Operations" sequence="3" value="operations"/>
+                <element inactive_on_update="false" label="Inventory" sequence="4" value="inventory"/>
+                <element inactive_on_update="false" label="Finance" sequence="2" value="finance"/>
+            </choice>
+        </element>
+        <element label="Manager" max_length="32" name="manager" reference="x_1954179_employ_0_users" type="reference"/>
+        <element label="Name" max_length="32" name="name" reference="x_1954179_employ_0_users" type="reference"/>
+        <element label="Email" max_length="150" name="email" type="string"/>
+        <index name="index">
+            <element name="manager"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+    </element>
+</database>

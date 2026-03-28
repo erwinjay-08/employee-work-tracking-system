@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="105b249f83b3321070a1c8efeeaad328" label="Timesheet" max_length="40" name="x_1954179_employ_0_timesheet" type="collection">
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Submitted" sequence="1" value="submitted"/>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+            </choice>
+        </element>
+        <element label="Employee" max_length="32" name="employee" reference="x_1954179_employ_0_employee" type="reference"/>
+        <element label="Hours Worked" max_length="40" name="hours_worked" type="glide_duration"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+    </element>
+</database>
