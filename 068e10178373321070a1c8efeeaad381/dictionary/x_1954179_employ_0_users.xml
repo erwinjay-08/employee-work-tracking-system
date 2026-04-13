@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="46a8681b83b3321070a1c8efeeaad35a" label="Users" max_length="40" name="x_1954179_employ_0_users" type="collection">
-        <element label="Role" max_length="40" name="sys_role" type="string"/>
-        <element label="Name" max_length="150" name="sys_name" type="string"/>
-        <element label="Address" max_length="150" name="sys_address" type="string"/>
-    </element>
-</database>

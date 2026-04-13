@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="employee_number" table="x_1954179_employ_0_employee">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Employee Number</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>employee_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_1954179_employ_0_employee</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 02:45:51</sys_created_on>
+        <sys_id>0ce6b1d48390031070a1c8efeeaad34e</sys_id>
+        <sys_name>Employee Number</sys_name>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name>sys_dictionary_x_1954179_employ_0_employee_employee_number</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 02:45:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</application>
+        <file_path/>
+        <instance_id>37d619413bcb4ad8677f04e0b5e45a31</instance_id>
+        <instance_name>dev276783</instance_name>
+        <name>sys_dictionary_x_1954179_employ_0_employee_employee_number</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="employee_number" table="x_1954179_employ_0_employee"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Employee Number</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>employee_number</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1954179_employ_0_employee</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-13 02:45:51</sys_created_on><sys_id>0ce6b1d48390031070a1c8efeeaad34e</sys_id><sys_name>Employee Number</sys_name><sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package><sys_policy/><sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope><sys_update_name>sys_dictionary_x_1954179_employ_0_employee_employee_number</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-13 02:45:52</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-1800693020</payload_hash>
+        <record_name>Employee.Employee Number</record_name>
+        <reverted_from/>
+        <source>349fe45783f3321070a1c8efeeaad337</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 02:45:53</sys_created_on>
+        <sys_id>60e6f1d48390031070a1c8efeeaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d84bb2ee80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 02:45:53</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>20e6f1d49390031091c9bc1f2598d153</update_guid>
+        <update_guid_history>20e6f1d49390031091c9bc1f2598d153:-1800693020,80e6b1d4aa9003105ba0938876f9dd8b:-687415545,e206b154539003109a3ea3a8133afaf5:1259446960,0ca5fdd010900310f5636f0f1ecd046a:-1800693020,a795bdd03c90031092ca7a04cfe720b7:-687415545</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 07:07:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>0fab6fed70794769ab7ca9655491f631</sys_id>
+        <sys_metadata>0ce6b1d48390031070a1c8efeeaad34e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Number</sys_name>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_parent display_value="Employee">71a96c9b83b3321070a1c8efeeaad3aa</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_scope_delete display_value="">7d1f886776b146d2aee7b1b1f3a5f2a4</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_1954179_employ_0_employee_employee_number</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_1954179_employ_0_employee_employee_number">60e6f1d48390031070a1c8efeeaad354</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 07:07:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

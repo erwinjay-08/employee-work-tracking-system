@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_1954179_employ_0_users</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-28 08:14:37</sys_created_on>
+        <sys_id>c8b82c1b83b3321070a1c8efeeaad369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1954179_employ_0_users</sys_name>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name>sys_security_acl_c8b82c1b83b3321070a1c8efeeaad369</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-28 08:14:37</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</application>
+        <file_path/>
+        <instance_id>37d619413bcb4ad8677f04e0b5e45a31</instance_id>
+        <instance_name>dev276783</instance_name>
+        <name>sys_security_acl_c8b82c1b83b3321070a1c8efeeaad369</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1954179_employ_0_users</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-28 08:14:37</sys_created_on><sys_id>c8b82c1b83b3321070a1c8efeeaad369</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1954179_employ_0_users</sys_name><sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package><sys_policy/><sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope><sys_update_name>sys_security_acl_c8b82c1b83b3321070a1c8efeeaad369</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-28 08:14:37</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-767652873</payload_hash>
+        <record_name>x_1954179_employ_0_users</record_name>
+        <reverted_from/>
+        <source>27c7649783b3321070a1c8efeeaad3be</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-28 08:14:38</sys_created_on>
+        <sys_id>80b82c1b83b3321070a1c8efeeaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d338269ad0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-28 08:14:38</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>40b82c1b6ab33210a353420780dfc96d</update_guid>
+        <update_guid_history>40b82c1b6ab33210a353420780dfc96d:-767652873</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 07:06:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>26b24ef5af21418c909048472e5f3861</sys_id>
+        <sys_metadata>c8b82c1b83b3321070a1c8efeeaad369</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1954179_employ_0_users</sys_name>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_parent display_value="">82a8681b83b3321070a1c8efeeaad360</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_scope_delete display_value="">7d1f886776b146d2aee7b1b1f3a5f2a4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_c8b82c1b83b3321070a1c8efeeaad369</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_c8b82c1b83b3321070a1c8efeeaad369">80b82c1b83b3321070a1c8efeeaad36e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 07:06:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state == 'draft'</condition>
+        <condition>current.status == 'draft'</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -28,13 +28,25 @@
         <list_style/>
         <messages/>
         <name>Submit Timesheet</name>
-        <onclick>onLoad()</onclick>
+        <onclick>submitTimesheet()</onclick>
         <order>100</order>
-        <script><![CDATA[function onLoad() {
-    // Hide submit button if not in Draft state
-    if (g_form.getValue('state') !== 'draft') {
-        g_ui_actions.hide('submit_timesheet');
-    }
+        <script><![CDATA[function submitTimesheet() {
+  if (!g_form.getValue('employee')) {
+    alert('Please select an Employee before submitting.');
+    return;
+  }
+  if (!g_form.getValue('week_start_date')) {
+    alert('Please enter the Week Start Date before submitting.');
+    return;
+  }
+  g_form.setValue('status', 'submitted');
+  g_form.save();
+}
+
+function onLoad() {
+  if (g_form.getValue('status') !== 'draft') {
+    g_ui_actions.hide('submit_timesheet');
+  }
 }]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -46,7 +58,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0721cad883d0031070a1c8efeeaad33c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Submit Timesheet</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
@@ -54,7 +66,7 @@
         <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
         <sys_update_name>sys_ui_action_0721cad883d0031070a1c8efeeaad33c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-13 03:48:07</sys_updated_on>
+        <sys_updated_on>2026-04-13 08:30:24</sys_updated_on>
         <table>x_1954179_employ_0_timesheet</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

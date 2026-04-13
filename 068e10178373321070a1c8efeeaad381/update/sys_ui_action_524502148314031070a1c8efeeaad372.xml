@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state == 'draft'</condition>
+        <condition>current.status == 'draft'</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -31,15 +31,10 @@
         <onclick/>
         <order>200</order>
         <script><![CDATA[(function executeRule(current, previous) {
-  current.state = 'submitted';
-  current.submitted_by = gs.getUserID();
-  current.submitted_date = new GlideDateTime();
+  current.status = 'draft';
   current.update();
-  // Trigger approval workflow
-  var wf = new Workflow();
-  wf.startFlow('timesheet_approval', current, 'insert', null);
-})(current, previous);
-]]></script>
+  action.setRedirectURL(current);
+})(current, previous);]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -50,7 +45,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>524502148314031070a1c8efeeaad372</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Save Draft</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
@@ -58,7 +53,7 @@
         <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
         <sys_update_name>sys_ui_action_524502148314031070a1c8efeeaad372</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-13 03:53:57</sys_updated_on>
+        <sys_updated_on>2026-04-13 06:51:11</sys_updated_on>
         <table>x_1954179_employ_0_timesheet</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

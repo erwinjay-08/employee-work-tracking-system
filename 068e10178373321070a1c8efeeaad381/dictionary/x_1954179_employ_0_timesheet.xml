@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="105b249f83b3321070a1c8efeeaad328" label="Timesheet" max_length="40" name="x_1954179_employ_0_timesheet" type="collection">
-        <element label="Approved By" max_length="32" name="approved_by" reference="x_1954179_employ_0_users" type="reference"/>
-        <element label="Timesheet Number" mandatory="true" max_length="40" name="timesheet_number" type="string"/>
         <element label="Wednesday Hours" max_length="38" name="wednesday_hours" type="decimal"/>
+        <element label="Approved by" max_length="32" name="approved_by" reference="sys_user" type="reference"/>
         <element label="Thursday Hours" max_length="38" name="thursday_hours" type="decimal"/>
         <element label="Sunday Hours" max_length="38" name="sunday_hours" type="decimal"/>
         <element label="Total Overtime" max_length="38" name="total_overtime" read_only="true" type="decimal"/>
-        <element choice="3" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+        <element choice="3" default="draft" label="Status" mandatory="true" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
                 <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
@@ -16,13 +15,12 @@
         </element>
         <element label="Saturday Hours" max_length="38" name="saturday_hours" type="decimal"/>
         <element label="Week Start Date" mandatory="true" max_length="255" name="week_start_date" type="glide_date"/>
-        <element label="Week End Date" mandatory="true" max_length="40" name="week_end_date" type="glide_date"/>
+        <element label="Week End Date" max_length="40" name="week_end_date" type="glide_date"/>
         <element label="Friday Hours" max_length="38" name="friday_hours" type="decimal"/>
         <element label="Approval Notes" max_length="1000" name="approval_notes" type="string"/>
         <element label="Employee" mandatory="true" max_length="32" name="employee" reference="x_1954179_employ_0_employee" type="reference"/>
         <element label="Monday Hours" max_length="38" name="monday_hours" type="decimal"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Submitted By" max_length="32" name="submitted_by" reference="x_1954179_employ_0_users" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Timesheet  Number" mandatory="true" max_length="40" name="number" type="string"/>
         <element label="Hours Worked" max_length="40" name="hours_worked" type="glide_duration"/>
         <element label="Tuesday Hours" max_length="38" name="tuesday_hours" type="decimal"/>
         <element label="Date" max_length="40" name="date" type="glide_date"/>
@@ -32,9 +30,6 @@
         </index>
         <index name="index2">
             <element name="employee"/>
-        </index>
-        <index name="index3">
-            <element name="submitted_by"/>
         </index>
     </element>
 </database>
