@@ -3,39 +3,39 @@
 ## Milestones
 
 ### Project Setup and Data Model Design
-- **Status:** in_progress
+- **Status:** done
 - **Priority:** medium
 - **Due:** N/A
 
 Set up the ServiceNow developer instance, create the scoped application, and design the data model for the Employee Work Tracking System.
 
 #### Tasks
-- [ ] **ServiceNow Instance Setup** (todo) — medium priority
-- [ ] **Scoped Application Creation** (todo) — medium priority
-- [ ] **Data Model Design** (todo) — medium priority
+- [x] **ServiceNow Instance Setup** (done) — medium priority
+- [x] **Scoped Application Creation** (done) — medium priority
+- [x] **Data Model Design** (done) — medium priority
 
 ### User Interface and Role-Based Access Control
-- **Status:** todo
+- **Status:** done
 - **Priority:** medium
 - **Due:** N/A
 
 Develop the user interface for employees, managers, and administrators, and implement role-based access control.
 
 #### Tasks
-- [ ] **Employee UI Development** (todo) — medium priority
-- [ ] **Manager UI Development** (todo) — medium priority
-- [ ] **Role-Based Access Control Implementation** (todo) — medium priority
+- [x] **Employee UI Development** (done) — medium priority
+- [x] **Manager UI Development** (done) — medium priority
+- [x] **Role-Based Access Control Implementation** (done) — medium priority
 
 ### Timesheet Submission and Approval Workflow
-- **Status:** todo
+- **Status:** in_progress
 - **Priority:** medium
 - **Due:** N/A
 
 Implement the timesheet submission and approval workflow using ServiceNow's Flow Designer.
 
 #### Tasks
-- [ ] **Timesheet Submission Workflow** (todo) — medium priority
-- [ ] **Timesheet Approval Workflow** (todo) — medium priority
+- [ ] **Timesheet Submission Workflow** (in_progress) — medium priority
+- [ ] **Timesheet Approval Workflow** (in_progress) — medium priority
 - [ ] **Business Rules for Time Calculation** (todo) — medium priority
 
 ### Task Assignment and Tracking
