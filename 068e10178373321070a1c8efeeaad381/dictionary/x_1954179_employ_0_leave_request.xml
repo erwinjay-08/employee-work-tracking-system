@@ -9,7 +9,10 @@
         </element>
         <element label="Employee" max_length="32" name="employee" reference="x_1954179_employ_0_employee" type="reference"/>
         <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Request Number" max_length="40" name="request_number" type="string"/>
         <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Total Days" max_length="38" name="total_days" type="decimal"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element choice="3" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Pending" sequence="3" value="pending"/>

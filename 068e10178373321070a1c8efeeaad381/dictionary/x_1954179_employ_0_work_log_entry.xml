@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bd6ab59c8390031070a1c8efeeaad384" label="Work Log Entry" max_length="40" name="x_1954179_employ_0_work_log_entry" type="collection">
+        <element label="Work Description" max_length="1000" name="work_description" type="string"/>
+        <element label="Date" max_length="40" name="log_date" type="glide_date"/>
+        <element label="Timesheet" max_length="32" name="timesheet" reference="x_1954179_employ_0_timesheet" type="reference"/>
+        <element label="Hours Worked" max_length="38" name="hours_worked" type="decimal"/>
+        <element label="Task" max_length="32" name="task" reference="x_1954179_employ_0_task" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Employee" max_length="32" name="employee" reference="x_1954179_employ_0_employee" type="reference"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+        <index name="index2">
+            <element name="task"/>
+        </index>
+        <index name="index3">
+            <element name="timesheet"/>
+        </index>
+    </element>
+</database>

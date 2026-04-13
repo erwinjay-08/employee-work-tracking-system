@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="71a96c9b83b3321070a1c8efeeaad3aa" label="Employee" max_length="40" name="x_1954179_employ_0_employee" type="collection">
+        <element label="Employee Number" max_length="40" name="employee_number" type="string"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
         <element choice="3" label="Department" max_length="150" name="department" type="choice">
             <choice>
                 <element inactive_on_update="false" label="IT" sequence="0" value="it"/>
@@ -9,8 +11,24 @@
                 <element inactive_on_update="false" label="Finance" sequence="2" value="finance"/>
             </choice>
         </element>
+        <element choice="3" label="Employment Type" max_length="40" name="employment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Contractual" sequence="2" value="contractual"/>
+                <element inactive_on_update="false" label="Part-Time" sequence="1" value="part_time"/>
+                <element inactive_on_update="false" label="Full-Time" sequence="0" value="full_time"/>
+            </choice>
+        </element>
         <element label="Manager" max_length="32" name="manager" reference="x_1954179_employ_0_users" type="reference"/>
+        <element label="Job Title" max_length="100" name="job_title" type="string"/>
         <element label="Name" max_length="32" name="name" reference="x_1954179_employ_0_users" type="reference"/>
+        <element default="15.00" label="Leave Balance" max_length="38" name="leave_balance" type="decimal"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Inactive" sequence="1" value="inactive"/>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="On Leave" sequence="2" value="on_leave"/>
+            </choice>
+        </element>
         <element label="Email" max_length="150" name="email" type="string"/>
         <index name="index">
             <element name="manager"/>
