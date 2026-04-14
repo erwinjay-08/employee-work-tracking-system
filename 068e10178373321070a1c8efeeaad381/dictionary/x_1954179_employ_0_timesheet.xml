@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="105b249f83b3321070a1c8efeeaad328" label="Timesheet" max_length="40" name="x_1954179_employ_0_timesheet" type="collection">
         <element label="Wednesday Hours" max_length="38" name="wednesday_hours" type="decimal"/>
-        <element label="Approved by" max_length="32" name="approved_by" reference="sys_user" type="reference"/>
+        <element label="Approved by" max_length="32" name="approved_by" read_only="true" reference="sys_user" type="reference"/>
         <element label="Thursday Hours" max_length="38" name="thursday_hours" type="decimal"/>
         <element label="Sunday Hours" max_length="38" name="sunday_hours" type="decimal"/>
         <element label="Total Overtime" max_length="38" name="total_overtime" read_only="true" type="decimal"/>

@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4983000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>timesheet_approval_notification</internal_name>
+        <label_cache>[{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Timesheet Record➛Timesheet  Number","reference":"","reference_display":"Timesheet  Number","type":"string","base_type":"string","parent_table_name":"x_1954179_employ_0_timesheet","column_name":"number","usedInstances":{"db3cb0b7-9583-441f-87f4-100ccbadcdec":["ah_subject"],"5a3b2266-5c1a-40b7-8b35-bc808793eea7":["ah_subject"],"6b8d14fe-6a07-495d-8c13-e803f2f2814f":["ah_subject"]}},{"name":"Updated_1.current.employee.email","label":"Trigger - Record Updated➛Timesheet Record➛Employee➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_1954179_employ_0_employee","column_name":"email","usedInstances":{"db3cb0b7-9583-441f-87f4-100ccbadcdec":["ah_to"],"5a3b2266-5c1a-40b7-8b35-bc808793eea7":["ah_to"],"6b8d14fe-6a07-495d-8c13-e803f2f2814f":["ah_to"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Timesheet Record","reference":"x_1954179_employ_0_timesheet","reference_display":"Timesheet","type":"reference","base_type":"reference","usedInstances":{"db3cb0b7-9583-441f-87f4-100ccbadcdec":["record"],"5a3b2266-5c1a-40b7-8b35-bc808793eea7":["record"],"6b8d14fe-6a07-495d-8c13-e803f2f2814f":["record"],"f4aec9be-60dd-4c5b-8be6-6dbea90875ef":["record"],"27c4a3d1-b15e-4627-a4c6-72623a88fafc":["record"]},"attributes":{}},{"name":"Updated_1.current.status","label":"Trigger - Record Updated➛Timesheet Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1954179_employ_0_timesheet","column_name":"status","choices":[{"used":false,"image":"","label":"Draft","reference":false,"rawLabel":"Draft","selected":false,"missing":false,"value":"draft","parameters":{"name":"x_1954179_employ_0_timesheet","dependent_values":[""]}},{"used":false,"image":"","label":"Submitted","reference":false,"rawLabel":"Submitted","selected":false,"missing":false,"value":"submitted","parameters":{"name":"x_1954179_employ_0_timesheet","dependent_values":[""]}},{"used":false,"image":"","label":"Approved","reference":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"x_1954179_employ_0_timesheet","dependent_values":[""]}},{"used":false,"image":"","label":"Rejected","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"x_1954179_employ_0_timesheet","dependent_values":[""]}}],"usedInstances":{"3a2445f8-b7ba-49c8-931e-c842fa81fc84":["condition"],"eaa45ca6-1cad-4303-9b0a-d8c8aee9c859":["condition"]}}]</label_cache>
+        <master_snapshot>3499176c835c831070a1c8efeeaad3ce</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Timesheet Approval Notification</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>5342232083dc831070a1c8efeeaad38c</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e4f0fe4831c831070a1c8efeeaad36b</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Timesheet Approval Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name>sys_hub_flow_5e4f0fe4831c831070a1c8efeeaad36b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:41</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>6742232083dc831070a1c8efeeaad3f7</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1954179_employ_0_timesheet">status=approved^ORstatus=rejected<item display_value="Approved" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="approved"/>
+            <item display_value="Rejected" endquery="false" field="status" goto="false" newquery="false" operator="=" or="true" value="rejected"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 05:13:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5342232083dc831070a1c8efeeaad38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:41</sys_updated_on>
+        <table>x_1954179_employ_0_timesheet</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>5e4f0fe4831c831070a1c8efeeaad36b</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 05:13:41</sys_created_on>
+        <sys_id>5f42232083dc831070a1c8efeeaad38c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:41</sys_updated_on>
+        <trigger display_value="">5342232083dc831070a1c8efeeaad38c</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=5e4f0fe4831c831070a1c8efeeaad36b^sys_idNOT IN5f42232083dc831070a1c8efeeaad38c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5e4f0fe4831c831070a1c8efeeaad36b^sys_idNOT IN9e4f0fe4831c831070a1c8efeeaad36c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5e4f0fe4831c831070a1c8efeeaad36b</id>
+        <name>Timesheet Approval Notification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:36</sys_created_on>
+        <sys_id>9e4f0fe4831c831070a1c8efeeaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 03:50:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9e4f0fe4831c831070a1c8efeeaad36c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=5e4f0fe4831c831070a1c8efeeaad36b^sys_idNOT IN0b5f4328831c831070a1c8efeeaad372,0f5f4328831c831070a1c8efeeaad33d,cf5f4328831c831070a1c8efeeaad35b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</model>
+        <model_id>5e4f0fe4831c831070a1c8efeeaad36b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5e4f0fe4831c831070a1c8efeeaad36b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:56</sys_created_on>
+        <sys_id>0b5f4328831c831070a1c8efeeaad372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 03:50:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0b5f4328831c831070a1c8efeeaad372"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</model>
+        <model_id>5e4f0fe4831c831070a1c8efeeaad36b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5e4f0fe4831c831070a1c8efeeaad36b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:55</sys_created_on>
+        <sys_id>0f5f4328831c831070a1c8efeeaad33d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 04:35:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0f5f4328831c831070a1c8efeeaad33d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</model>
+        <model_id>5e4f0fe4831c831070a1c8efeeaad36b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5e4f0fe4831c831070a1c8efeeaad36b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:55</sys_created_on>
+        <sys_id>cf5f4328831c831070a1c8efeeaad35b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 04:35:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cf5f4328831c831070a1c8efeeaad35b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5e4f0fe4831c831070a1c8efeeaad36b^sys_idNOT IN3a5f4328831c831070a1c8efeeaad31b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:55</sys_created_on>
+        <sys_id>3a5f4328831c831070a1c8efeeaad31b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:39</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=5e4f0fe4831c831070a1c8efeeaad36b^sys_idNOT IN61285f68835c831070a1c8efeeaad37f,a5e71768835c831070a1c8efeeaad3b7,accf8f28831c831070a1c8efeeaad36b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>eaa45ca6-1cad-4303-9b0a-d8c8aee9c859</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:29:19</sys_created_on>
+        <sys_id>61285f68835c831070a1c8efeeaad37f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>employ.mng</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:16:58</sys_updated_on>
+        <ui_id>f4aec9be-60dd-4c5b-8be6-6dbea90875ef</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPKEoIsMJbVYQ0qWultutLV0WOfQOWnI/ZDiVD/PddJ06IKOqo1Bc03u6Xfc7JufhlRwQnczIG7gezYMrCIAxHvj+6GgfxNIyDEQ8pQECGJKMpYKcCliuO8YbK0iZ2u58FpwZ4FHisVAoys99jnQtdSFo9uzbMsLWQHOtk/vI6JAVVeKIBRea7o9K5kCSNQWLrQ4vpGKOpChvznJUp4opEm7x1kwtXGXxfYAWHLJzAHxLYGsg4IJCESg1DktIMWeaqInOjSkwooPw+k1XXsRaZaYimdKvFH7x57Nu+BJAZcyJ0YeQEatLJghr6iCczU6pOr1ww0I0mHBJaSnPTzzUN94URedaMGBrLdjqXZZrdNYqQ7oDe9yg1goDC8rTIG1rJ4zp/e2hBLkVWS+IoypxR2UXUGCXi0lg4OwISao1TWhQiW0WFyjeiHkYoqbeSGHiJzN/wTi1WmUeZxe2hqtRbYn5Rp5+pEpbEDzwGh/dDoit9I6nWByqoYfS7tEgaYo5CVKtQSxDVTrDDTInCXONVG3DA90Nn+njykcPY7GCo3pkH42+jYDYZB99mEaSFzKvIj4xIQa8BzHv/P/VKn1uEM2C2i/BUf/7TsN0uvMvd9mcHd03BbcLkyzbh6pI2wdG4+FX41wL4ow//YntOqj2ve+bXhppS/yp9P+Rc0eSE40+1fM75Z+Brnb8UILk+Abi1vd1RfKWihsCR9V1x8OyK3UPwZf4Ppn79u6At+G/eg9e/iHY4sAYJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=61285f68835c831070a1c8efeeaad37f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>eaa45ca6-1cad-4303-9b0a-d8c8aee9c859</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:28:14</sys_created_on>
+        <sys_id>a5e71768835c831070a1c8efeeaad3b7</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>employ.mng</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:16:58</sys_updated_on>
+        <ui_id>6b8d14fe-6a07-495d-8c13-e803f2f2814f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Y7W7bNhSGb4XTb8+Vv+PsV5cgWIG0BZqsxdAUAkVSEVdK1Egqjhf4XnYtu7IeirQk25ljNx6WYPkTQPx8z+H78ND5fBdwGhwHQ3oUjuNkiCfhoD8Iw6P+dBoPpkl4NJmGPUKDTpDjjMFIxYhU9vsGi9I23N39WlBsGI16XVIqxXKzWEA/5boQeP7RD4MWknJBoT84/vylExRYwYqGqeD4bq1rV0kCx0zA0EusrplBH5bS1qWaeWG/qSRlBvIivmw89wuc+h705hR6YJJVFXYCdmtYThnISbDQrBNkOIdYpZrXLYph+j4XTUPKcwNLvtZaEg550cikDLEMc4Fm3KQIIyesG9j1bjX/E8QN+naphEEOiNXKc8IpKApazZFPKXS/abqTU2zwhVElMaWqMy05Ydplk7IEl8KctNvcgPeF4TJ3UwyOxXK2FGWWv3NJDOoFWidZahDDCpsbGyxsDoEnF6mcfViKPeN5lUWfFSEJFvVXcsGwIukZZ8IedV5mMYztBNgYxePSWJlgCgGjmn2iSqrdC0YywaqjzHBR8Pw6KpS84dWGID/rXgv46CZCzmC+5td5FxMbaxdOD3fPoP20av6IFbeBv4VlYPKiE+i5PhFY6yZ8yH/0R2nVu2SsyrGzo8pwdjJRvDCvYasb5oNddDxivek2P9Nh49vWmg1mt1FvOhr2JtOIZYWQ8yiMDM+YThkzm7Rdtrr2w24HmQ121jL3y/bIbbSdt+eid67DA9fbEzhnO8/bJUBm3D3g8ELGy6sZOwpXGfsHtp4GUzUpO0O1Cs+/AwiYREfO5T62avPvAOchXMLxOI7H8WgyaHw4JQmdxMkYT8ig8d0MLlmVYfU1qi7ZFjPhJhhO7r5Q7CBmCQXczKKkDH1aqtom1FMSSwlXXb6OCNj71ZnX6xHpP6omOW8iIxGcpphDJaol2camTpkUG8Q10nBcXXQpEfdRtWZ00FyWKCu1gWEGelboWyluw6cLni8nvvV01Sy+81mQeXgCR9srAW6MjdPIyO1Pwq6rWox1K4ctFmiTzV2n7cfuDmHUBU1uxuQR1XCC+fUaoRfLRk/nYDudrl5twNmqT+HTBeW5cGCFC57xyhCO4MOjQbd6ioUrNiKkhcYBfhjtsPnS0Ccnm0r2MfTw+8rNi6OfnaN7W39ts/GKj+JDW3qH3ZeW/nnN0/Heph69mPp/YurRdluRFSPpMv6dEfPAM8b9qwLeISnWKGYsh/euncboD7s9aLYvsOfT5uH4lthc1NHdF/E++IxfHjn/OT2HRwVvtVLSX71zJZ23OLkqw3BACmQ1/2h4Ps8IU1KaGBLzteqkV8GVG8bs3/44j3XxE/pNlgqBC+EaAP+j+v9Z97Dh9nhVuEU2UfMaXPfffz1q6f0g3CFzde1yedtIpMcvNZlYg++Xy7fnDXqTR1au8Wg0GL/A9+jSVcxonypZFD62A5evL98AJr/y9ZYZAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a5e71768835c831070a1c8efeeaad3b7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>3a2445f8-b7ba-49c8-931e-c842fa81fc84</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:52:40</sys_created_on>
+        <sys_id>accf8f28831c831070a1c8efeeaad36b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>employ.mng</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:16:58</sys_updated_on>
+        <ui_id>db3cb0b7-9583-441f-87f4-100ccbadcdec</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Y7W7bNhSGb4XTb8+Vv+PsV5cgWIG0BZqsxdAUAkVSEVdK1Egqjhf4XnYtu7IeirQk25ljNx6WYPkTQPx8z+H78ND5fBdwGhwHQ3oUjuNkiCfhoD8Iw6P+dBoPpkl4NJmGPUKDTpDjjMFIxYhU9vsGi9I23N39WlBsGI16XVIqxXKzWEA/5boQeP7RD4MWknJBoT84/vylExRYwYqGqeD4bq1rV0kCx0zA0EusrplBH5bS1qWaeWG/qSRlBvIivmw89wuc+h705hR6YJJVFXYCdmtYThnISbDQrBNkOIdYpZrXLYph+j4XTUPKcwNLvtZaEg550cikDLEMc4Fm3KQIIyesG9j1bjX/E8QN+naphEEOiNXKc8IpKApazZFPKXS/abqTU2zwhVElMaWqMy05Ydplk7IEl8KctNvcgPeF4TJ3UwyOxXK2FGWWv3NJDOoFWidZahDDCpsbGyxsDoEnF6mcfViKPeN5lUWfFSEJFvVXcsGwIukZZ8IedV5mMYztBNgYxePSWJlgCgGjmn2iSqrdC0YywaqjzHBR8Pw6KpS84dWGID/rXgv46CZCzmC+5td5FxMbaxdOD3fPoP20av6IFbeBv4VlYPKiE+i5PhFY6yZ8yH/0R2nVu2SsyrGzo8pwdjJRvDCvYasb5oNddDxivek2P9Nh49vWmg1mt1FvOhr2JtOIZYWQ8yiMDM+YThkzm7Rdtrr2w24HmQ121jL3y/bIbbSdt+eid67DA9fbEzhnO8/bJUBm3D3g8ELGy6sZOwpXGfsHtp4GUzUpO0O1Cs+/AwiYREfO5T62avPvAOchXMLxOI7H8WgyaHw4JQmdxMkYT8ig8d0MLlmVYfU1qi7ZFjPhJhhO7r5Q7CBmCQXczKKkDH1aqtom1FMSSwlXXb6OCNj71ZnX6xHpP6omOW8iIxGcpphDJaol2camTpkUG8Q10nBcXXQpEfdRtWZ00FyWKCu1gWEGelboWyluw6cLni8nvvV01Sy+81mQeXgCR9srAW6MjdPIyO1Pwq6rWox1K4ctFmiTzV2n7cfuDmHUBU1uxuQR1XCC+fUaoRfLRk/nYDudrl5twNmqT+HTBeW5cGCFC57xyhCO4MOjQbd6ioUrNiKkhcYBfhjtsPnS0Ccnm0r2MfTw+8rNi6OfnaN7W39ts/GKj+JDW3qH3ZeW/nnN0/Heph69mPp/YurRdluRFSPpMv6dEfPAM8b9qwLeISnWKGYst09pyAijP+z2oNm+wJ5Pm4fjW2JzUUd3X8T74DN+eeT85/QcHhW81UpJf/XOlXTe4uSqDMMBKZDV/KPh+TwjTElpYkjM16qTXgVXbhizf/vjPNbFT+g3WSoELoRrACBB9f+z7mHD7fGqcItsouY1uO6//3rU0vtBuEPm6trl8raRSI9fajKxBt8vl2/PG/Qmj6xc49FoMH6B79Glq5jRPlWyKHxsBy5fX74BECCNP5YZAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=accf8f28831c831070a1c8efeeaad36b"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5e4f0fe4831c831070a1c8efeeaad36b^sys_idNOT IN67e81be8835c831070a1c8efeeaad3e2,968f8728831c831070a1c8efeeaad39b,e1b71f28835c831070a1c8efeeaad31e"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a099176c835c831070a1c8efeeaad392</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>eaa45ca6-1cad-4303-9b0a-d8c8aee9c859</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:32:44</sys_created_on>
+        <sys_id>67e81be8835c831070a1c8efeeaad3e2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:39</sys_updated_on>
+        <ui_id>fde5beb0-9d8e-4787-ac8c-66e8d363a2e2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a099176c835c831070a1c8efeeaad388</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:51:41</sys_created_on>
+        <sys_id>968f8728831c831070a1c8efeeaad39b</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:39</sys_updated_on>
+        <ui_id>3a2445f8-b7ba-49c8-931e-c842fa81fc84</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lYBnQdAjNhrfghYBArQN0KS5tIGwIlc2UYpU+bDjGv73LvVwjNZGH+ixN3GWuzszHGjHTPBd8O7BXDsnl5otPj0lTOqI0feOaWiRLRg3Wkgvja56IGFrUCEWbpsL6Dpr1igIFdJ1CraPJ4t8JZWwOO7owNIkj5Ytdj+U/LbDSkGNimbceyv1ktqloFOTQZNf8ZyXxbwssqx4dZnX87LOC1ECQkn3psbXE+WLtz2SnNUS9xHupk3GikgrzxKGzx61IPqLBpTDhLWgBXhjtwfEIog7rV6AldSexrF4+dnJbzS7mM3ixQZJI8eheDhWo2sDzFdGcrzrIsEB8VCrsYcbFVr9ftAR/cYGgvKT34QER/Owi6Qji5FSc78ymw/Twhupe4FjURkO6nACTzbUwaOLD4MKWxpUtfSOZE4VH1P2zcSlTZeKDmmjzIaWxvykwCPxlDyC9IbwNz38CFZGFe9oDDUPNGtwkld91mictyRh39tSfQ2R0CBwlFINbtAFx63s/DXtWePIep/8HNSjjO52HzsihKLKUx4seeBT58EHt99/DllWivMR/qPef5HwK5g1szybnU745fxUwk9k+3ysi1/EOj7Eb6Y6y7L/sT6OtXTVEM9RW7/8r1P9FCM8bHBDbgRy6YjIQ8Rup790LGwpAJIfQxtjv0QJL9j+O6b77ffvBQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6499176c835c831070a1c8efeeaad38d</block>
+        <comment/>
+        <connected_to>3a2445f8-b7ba-49c8-931e-c842fa81fc84</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:27:24</sys_created_on>
+        <sys_id>e1b71f28835c831070a1c8efeeaad31e</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:39</sys_updated_on>
+        <ui_id>eaa45ca6-1cad-4303-9b0a-d8c8aee9c859</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW8TMRD9K5XPq9XuhlaQWwWqhARUoqUXqFaz9mxi8NrGH0lDlP/OeD/SCBKVcuDEbf3GM/Pe89NumYnBxuBvzaX3cqHZ/PN9xqROGH1vmYYO2Zxxo4UM0ui6BzK2AhVTQbZnDr8iDygIFdJbBZu7o0W+lEo4HHdYcDQpoGPz7S+lsLFYK2hQ0Yyb4KReULsUdGoLaMtXvOSz6mJWFUX18kXZXMyashIzQKjo3tT4eqJ89q5HspNa0j7C/bTJOJFolUXG8CGgFkR/3oLymLEOtIBg3GaPOARxrdUjsJQ60DiWLj94+YNmV+fn6WKLpJHjUNwf69G1AeZLIzle20RwQAI0auzhRsVOfxh0JL+xhajC5Dch0dM8tIl0YjFSam+WZv1xWngldS9wLCrDQe1PEMiGJgb06WFQYUeD6g6sJXNq68xK9s3EpcsXig55q8yalqb85MAT8Zw8gvyK8Dc9fAdOJhXvaQw1DzQb8JLXfdZoXHAkYdfbUn+PidAgcJRSD27QBc+dtOGS9qxwZL3Lfg/qQUa320+WCKGoy5xHRx6E3AcI0e92X2JRzMTpCD+r9x8kvDyW8CPZPh3r6olYp4f4w1QXRfE/1oexlr4e4jlq65f/darvU4SHDX7IjUAuPRG5Tdjb6S+dChsKgOSH0Nq4b0nCI7b7CWvD/+DvBQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5e4f0fe4831c831070a1c8efeeaad36b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:55</sys_created_on>
+        <sys_id>475f4328831c831070a1c8efeeaad358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 03:50:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5e4f0fe4831c831070a1c8efeeaad36b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:55</sys_created_on>
+        <sys_id>8f5f4328831c831070a1c8efeeaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 03:50:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5e4f0fe4831c831070a1c8efeeaad36b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 03:50:56</sys_created_on>
+        <sys_id>cf5f4328831c831070a1c8efeeaad379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 03:50:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5e4f0fe4831c831070a1c8efeeaad36b"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>timesheet_approval_notification</internal_name>
+        <label_cache>[{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Timesheet Record➛Timesheet  Number","reference":"","reference_display":"Timesheet  Number","type":"string","base_type":"string","parent_table_name":"x_1954179_employ_0_timesheet","column_name":"number","usedInstances":{"db3cb0b7-9583-441f-87f4-100ccbadcdec":["ah_subject"],"5a3b2266-5c1a-40b7-8b35-bc808793eea7":["ah_subject"],"6b8d14fe-6a07-495d-8c13-e803f2f2814f":["ah_subject"]}},{"name":"Updated_1.current.employee.email","label":"Trigger - Record Updated➛Timesheet Record➛Employee➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_1954179_employ_0_employee","column_name":"email","usedInstances":{"db3cb0b7-9583-441f-87f4-100ccbadcdec":["ah_to"],"5a3b2266-5c1a-40b7-8b35-bc808793eea7":["ah_to"],"6b8d14fe-6a07-495d-8c13-e803f2f2814f":["ah_to"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Timesheet Record","reference":"x_1954179_employ_0_timesheet","reference_display":"Timesheet","type":"reference","base_type":"reference","usedInstances":{"db3cb0b7-9583-441f-87f4-100ccbadcdec":["record"],"5a3b2266-5c1a-40b7-8b35-bc808793eea7":["record"],"6b8d14fe-6a07-495d-8c13-e803f2f2814f":["record"],"f4aec9be-60dd-4c5b-8be6-6dbea90875ef":["record"],"27c4a3d1-b15e-4627-a4c6-72623a88fafc":["record"]},"attributes":{}},{"name":"Updated_1.current.status","label":"Trigger - Record Updated➛Timesheet Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1954179_employ_0_timesheet","column_name":"status","choices":[{"used":false,"image":"","label":"Draft","reference":false,"rawLabel":"Draft","selected":false,"missing":false,"value":"draft","parameters":{"name":"x_1954179_employ_0_timesheet","dependent_values":[""]}},{"used":false,"image":"","label":"Submitted","reference":false,"rawLabel":"Submitted","selected":false,"missing":false,"value":"submitted","parameters":{"name":"x_1954179_employ_0_timesheet","dependent_values":[""]}},{"used":false,"image":"","label":"Approved","reference":false,"rawLabel":"Approved","selected":false,"missing":false,"value":"approved","parameters":{"name":"x_1954179_employ_0_timesheet","dependent_values":[""]}},{"used":false,"image":"","label":"Rejected","reference":false,"rawLabel":"Rejected","selected":false,"missing":false,"value":"rejected","parameters":{"name":"x_1954179_employ_0_timesheet","dependent_values":[""]}}],"usedInstances":{"3a2445f8-b7ba-49c8-931e-c842fa81fc84":["condition"],"eaa45ca6-1cad-4303-9b0a-d8c8aee9c859":["condition"]}}]</label_cache>
+        <master>true</master>
+        <name>Timesheet Approval Notification</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Timesheet Approval Notification">5e4f0fe4831c831070a1c8efeeaad36b</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3499176c835c831070a1c8efeeaad3ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:40</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3499176c835c831070a1c8efeeaad3ce^sys_idNOT IN7099176c835c831070a1c8efeeaad3cf"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3499176c835c831070a1c8efeeaad3ce</id>
+        <name>Timesheet Approval Notification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>7099176c835c831070a1c8efeeaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 04:35:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7099176c835c831070a1c8efeeaad3cf"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3499176c835c831070a1c8efeeaad3ce^sys_idNOT IN3899176c835c831070a1c8efeeaad3e3,7899176c835c831070a1c8efeeaad3ee,7c99176c835c831070a1c8efeeaad3d0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</model>
+        <model_id>3499176c835c831070a1c8efeeaad3ce</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3499176c835c831070a1c8efeeaad3ce</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>3899176c835c831070a1c8efeeaad3e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3899176c835c831070a1c8efeeaad3e3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</model>
+        <model_id>3499176c835c831070a1c8efeeaad3ce</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3499176c835c831070a1c8efeeaad3ce</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>7899176c835c831070a1c8efeeaad3ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7899176c835c831070a1c8efeeaad3ee"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</model>
+        <model_id>3499176c835c831070a1c8efeeaad3ce</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3499176c835c831070a1c8efeeaad3ce</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>7c99176c835c831070a1c8efeeaad3d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7c99176c835c831070a1c8efeeaad3d0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3499176c835c831070a1c8efeeaad3ce^sys_idNOT IN3c99576c835c831070a1c8efeeaad30c"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>3c99576c835c831070a1c8efeeaad30c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:40</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3499176c835c831070a1c8efeeaad3ce^sys_idNOT IN3499576c835c831070a1c8efeeaad308,7099576c835c831070a1c8efeeaad307,7099576c835c831070a1c8efeeaad30a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>eaa45ca6-1cad-4303-9b0a-d8c8aee9c859</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>3499576c835c831070a1c8efeeaad308</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 04:35:33</sys_updated_on>
+        <ui_id>6b8d14fe-6a07-495d-8c13-e803f2f2814f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Y7W7bNhSGb4XTb8+Vv+PsV5cgWIG0BZqsxdAUAkVSEVdK1Egqjhf4XnYtu7IeirQk25ljNx6WYPkTQPx8z+H78ND5fBdwGhwHQ3oUjuNkiCfhoD8Iw6P+dBoPpkl4NJmGPUKDTpDjjMFIxYhU9vsGi9I23N39WlBsGI16XVIqxXKzWEA/5boQeP7RD4MWknJBoT84/vylExRYwYqGqeD4bq1rV0kCx0zA0EusrplBH5bS1qWaeWG/qSRlBvIivmw89wuc+h705hR6YJJVFXYCdmtYThnISbDQrBNkOIdYpZrXLYph+j4XTUPKcwNLvtZaEg550cikDLEMc4Fm3KQIIyesG9j1bjX/E8QN+naphEEOiNXKc8IpKApazZFPKXS/abqTU2zwhVElMaWqMy05Ydplk7IEl8KctNvcgPeF4TJ3UwyOxXK2FGWWv3NJDOoFWidZahDDCpsbGyxsDoEnF6mcfViKPeN5lUWfFSEJFvVXcsGwIukZZ8IedV5mMYztBNgYxePSWJlgCgGjmn2iSqrdC0YywaqjzHBR8Pw6KpS84dWGID/rXgv46CZCzmC+5td5FxMbaxdOD3fPoP20av6IFbeBv4VlYPKiE+i5PhFY6yZ8yH/0R2nVu2SsyrGzo8pwdjJRvDCvYasb5oNddDxivek2P9Nh49vWmg1mt1FvOhr2JtOIZYWQ8yiMDM+YThkzm7Rdtrr2w24HmQ121jL3y/bIbbSdt+eid67DA9fbEzhnO8/bJUBm3D3g8ELGy6sZOwpXGfsHtp4GUzUpO0O1Cs+/AwiYREfO5T62avPvAOchXMLxOI7H8WgyaHw4JQmdxMkYT8ig8d0MLlmVYfU1qi7ZFjPhJhhO7r5Q7CBmCQXczKKkDH1aqtom1FMSSwlXXb6OCNj71ZnX6xHpP6omOW8iIxGcpphDJaol2camTpkUG8Q10nBcXXQpEfdRtWZ00FyWKCu1gWEGelboWyluw6cLni8nvvV01Sy+81mQeXgCR9srAW6MjdPIyO1Pwq6rWox1K4ctFmiTzV2n7cfuDmHUBU1uxuQR1XCC+fUaoRfLRk/nYDudrl5twNmqT+HTBeW5cGCFC57xyhCO4MOjQbd6ioUrNiKkhcYBfhjtsPnS0Ccnm0r2MfTw+8rNi6OfnaN7W39ts/GKj+JDW3qH3ZeW/nnN0/Heph69mPp/YurRdluRFSPpMv6dEfPAM8b9qwLeISnWKGYsh/euncboD7s9aLYvsOfT5uH4lthc1NHdF/E++IxfHjn/OT2HRwVvtVLSX71zJZ23OLkqw3BACmQ1/2h4Ps8IU1KaGBLzteqkV8GVG8bs3/44j3XxE/pNlgqBC+EaAP+j+v9Z97Dh9nhVuEU2UfMaXPfffz1q6f0g3CFzde1yedtIpMcvNZlYg++Xy7fnDXqTR1au8Wg0GL/A9+jSVcxonypZFD62A5evL98AJr/y9ZYZAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3499576c835c831070a1c8efeeaad308"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>3a2445f8-b7ba-49c8-931e-c842fa81fc84</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>7099576c835c831070a1c8efeeaad307</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 04:35:33</sys_updated_on>
+        <ui_id>db3cb0b7-9583-441f-87f4-100ccbadcdec</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Y7W7bNhSGb4XTb8+Vv+PsV5cgWIG0BZqsxdAUAkVSEVdK1Egqjhf4XnYtu7IeirQk25ljNx6WYPkTQPx8z+H78ND5fBdwGhwHQ3oUjuNkiCfhoD8Iw6P+dBoPpkl4NJmGPUKDTpDjjMFIxYhU9vsGi9I23N39WlBsGI16XVIqxXKzWEA/5boQeP7RD4MWknJBoT84/vylExRYwYqGqeD4bq1rV0kCx0zA0EusrplBH5bS1qWaeWG/qSRlBvIivmw89wuc+h705hR6YJJVFXYCdmtYThnISbDQrBNkOIdYpZrXLYph+j4XTUPKcwNLvtZaEg550cikDLEMc4Fm3KQIIyesG9j1bjX/E8QN+naphEEOiNXKc8IpKApazZFPKXS/abqTU2zwhVElMaWqMy05Ydplk7IEl8KctNvcgPeF4TJ3UwyOxXK2FGWWv3NJDOoFWidZahDDCpsbGyxsDoEnF6mcfViKPeN5lUWfFSEJFvVXcsGwIukZZ8IedV5mMYztBNgYxePSWJlgCgGjmn2iSqrdC0YywaqjzHBR8Pw6KpS84dWGID/rXgv46CZCzmC+5td5FxMbaxdOD3fPoP20av6IFbeBv4VlYPKiE+i5PhFY6yZ8yH/0R2nVu2SsyrGzo8pwdjJRvDCvYasb5oNddDxivek2P9Nh49vWmg1mt1FvOhr2JtOIZYWQ8yiMDM+YThkzm7Rdtrr2w24HmQ121jL3y/bIbbSdt+eid67DA9fbEzhnO8/bJUBm3D3g8ELGy6sZOwpXGfsHtp4GUzUpO0O1Cs+/AwiYREfO5T62avPvAOchXMLxOI7H8WgyaHw4JQmdxMkYT8ig8d0MLlmVYfU1qi7ZFjPhJhhO7r5Q7CBmCQXczKKkDH1aqtom1FMSSwlXXb6OCNj71ZnX6xHpP6omOW8iIxGcpphDJaol2camTpkUG8Q10nBcXXQpEfdRtWZ00FyWKCu1gWEGelboWyluw6cLni8nvvV01Sy+81mQeXgCR9srAW6MjdPIyO1Pwq6rWox1K4ctFmiTzV2n7cfuDmHUBU1uxuQR1XCC+fUaoRfLRk/nYDudrl5twNmqT+HTBeW5cGCFC57xyhCO4MOjQbd6ioUrNiKkhcYBfhjtsPnS0Ccnm0r2MfTw+8rNi6OfnaN7W39ts/GKj+JDW3qH3ZeW/nnN0/Heph69mPp/YurRdluRFSPpMv6dEfPAM8b9qwLeISnWKGYst09pyAijP+z2oNm+wJ5Pm4fjW2JzUUd3X8T74DN+eeT85/QcHhW81UpJf/XOlXTe4uSqDMMBKZDV/KPh+TwjTElpYkjM16qTXgVXbhizf/vjPNbFT+g3WSoELoRrACBB9f+z7mHD7fGqcItsouY1uO6//3rU0vtBuEPm6trl8raRSI9fajKxBt8vl2/PG/Qmj6xc49FoMH6B79Glq5jRPlWyKHxsBy5fX74BECCNP5YZAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7099576c835c831070a1c8efeeaad307"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>eaa45ca6-1cad-4303-9b0a-d8c8aee9c859</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>7099576c835c831070a1c8efeeaad30a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 04:35:33</sys_updated_on>
+        <ui_id>f4aec9be-60dd-4c5b-8be6-6dbea90875ef</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPKEoIsMJbVYQ0qWultutLV0WOfQOWnI/ZDiVD/PddJ06IKOqo1Bc03u6Xfc7JufhlRwQnczIG7gezYMrCIAxHvj+6GgfxNIyDEQ8pQECGJKMpYKcCliuO8YbK0iZ2u58FpwZ4FHisVAoys99jnQtdSFo9uzbMsLWQHOtk/vI6JAVVeKIBRea7o9K5kCSNQWLrQ4vpGKOpChvznJUp4opEm7x1kwtXGXxfYAWHLJzAHxLYGsg4IJCESg1DktIMWeaqInOjSkwooPw+k1XXsRaZaYimdKvFH7x57Nu+BJAZcyJ0YeQEatLJghr6iCczU6pOr1ww0I0mHBJaSnPTzzUN94URedaMGBrLdjqXZZrdNYqQ7oDe9yg1goDC8rTIG1rJ4zp/e2hBLkVWS+IoypxR2UXUGCXi0lg4OwISao1TWhQiW0WFyjeiHkYoqbeSGHiJzN/wTi1WmUeZxe2hqtRbYn5Rp5+pEpbEDzwGh/dDoit9I6nWByqoYfS7tEgaYo5CVKtQSxDVTrDDTInCXONVG3DA90Nn+njykcPY7GCo3pkH42+jYDYZB99mEaSFzKvIj4xIQa8BzHv/P/VKn1uEM2C2i/BUf/7TsN0uvMvd9mcHd03BbcLkyzbh6pI2wdG4+FX41wL4ow//YntOqj2ve+bXhppS/yp9P+Rc0eSE40+1fM75Z+Brnb8UILk+Abi1vd1RfKWihsCR9V1x8OyK3UPwZf4Ppn79u6At+G/eg9e/iHY4sAYJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7099576c835c831070a1c8efeeaad30a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3499176c835c831070a1c8efeeaad3ce^sys_idNOT IN7099576c835c831070a1c8efeeaad303,7c99576c835c831070a1c8efeeaad300,b099576c835c831070a1c8efeeaad305"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6499176c835c831070a1c8efeeaad38d</block>
+        <comment/>
+        <connected_to>3a2445f8-b7ba-49c8-931e-c842fa81fc84</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>7099576c835c831070a1c8efeeaad303</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:40</sys_updated_on>
+        <ui_id>eaa45ca6-1cad-4303-9b0a-d8c8aee9c859</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/TMBT9K5OfoyhJ2QR9mzpNQhpMYmMvMEU3ttMaHNv4o1uJ+t+5jpO2Gp1gYo+81ed+nXNyr9oTHbwJ3t3qc+fEUpH5l/uMCBUx/N0TBR0nc0K1YsILreoByMgaZIgB0Z5Y/o1TzxmiTDgjYXN3NEhXQjLLxxkGLHby3JJ5/yQkGNa2BbTlO1rSWXU2q4qievumbM5mTVmxGXCosKGEhktMXUzkTq4GJHuWtd+YiDtvhVqO76uxy80Eassiq7LICH/0XDFkP29BOp6RDhQDr+1mh1gO7FrJPbASymM7EpMfnfiJA6vT05jYcpRIeQrunvVoWoLbC/CAVAL1wY6pdKUF5S6Zw3gLQfrFIZYSrk2Umko8NHKq1jJ06mNyhOwaTN8IkeCQBDdRaaQ+6mhvVvrh08TyUqjBlTEoNQW5e4FH75rgI5+ecMk7bFR3YAw6Whur12IoRi5dvpT4yFupH3Bo3LkcaCSeo7GQXyJ+McB3YEVU8QHbYHGi2YATtB72E9uhTZxsM+I2biHBub1IdLf+ESLFJHkUVyd/Ygm1wvhznLzmo45t9vu6H2x63382SJGzusxpsOiKz50HH9x2+zUUxYw9fwgvqn3VOymP3cmRC3nhcVR/OI74Zf7yNoqi+H8c/3wcwtVppUdtw/BXvI37eAhp5s5rKhxSu43Y++kfIwY2uFyCHkIP2n6PovbY9heDh1KtewYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a099176c835c831070a1c8efeeaad388</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>7c99576c835c831070a1c8efeeaad300</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:40</sys_updated_on>
+        <ui_id>3a2445f8-b7ba-49c8-931e-c842fa81fc84</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnQdAjNhrfAgcBAqQN0KS5tIGwIimbKEWqfNhxBf97l3rZaB20RnvsTZzl7s4Od6CWaO8a7+yTvrZWrBRZfH6JiFABw++WKKg5WRCqFRNOaFV0QEQ2IH0I3FUX0DRGbzhDlAnbSNg9nwzStZDM8KFHAwYrOW7Iov0pJBjmVglU6RVNaZ7N8yxJsneXaTnPyzRjOXDIsaCEkku8uhzJXdx3SPQma7drAm6dEWo1nO+HKo8jqA0LrNIkIvzVccWQ/aICaXlEalAMnDa7CTEc2IOSB2AtlMNyJFx+teI7Nsxms3Cx4jgi5X1wOhaDaD1c3YADpOKp82a4StdaUG57cRivwEu3PMb6Cw9NGLVPcVDKMVtLX6sPvSJkKjC+ESLeIgnehEkD9WGO6nGttx9HlrdCdaoMQakpyOkEDrUrvQt8WsIlr7FQUePbo6JFWADRJSOXOl5JPMSV1FtsGnYuBhqIxygsxLeI33TwMxgRpniPZTC5p1mCFbTo9hPLoUyc7CNid3YpwdrDkKhu8c0Hiv3Iw3BFr09IoUY07ho7b/gwxz76dd2PNr1tPzVIkbMijak3qIqLrQPn7X7/xSdJzt42wlm55/nkCmbVLE1mp31yOT/lkxMOOdMc2W/MEV7mD72RJMl/c/y1OYQt+pUeZuua/0NvvAQj9D0nramwSO0pYHfjHyMEdrhcgh5DW22+hqEO2P4HvHVm6XsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a099176c835c831070a1c8efeeaad392</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Timesheet Approval Notification">3499176c835c831070a1c8efeeaad3ce</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>eaa45ca6-1cad-4303-9b0a-d8c8aee9c859</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>b099576c835c831070a1c8efeeaad305</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:40</sys_updated_on>
+        <ui_id>fde5beb0-9d8e-4787-ac8c-66e8d363a2e2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3499176c835c831070a1c8efeeaad3ce</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>3899176c835c831070a1c8efeeaad3f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 04:35:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3499176c835c831070a1c8efeeaad3ce</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>3c99176c835c831070a1c8efeeaad3df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 04:35:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3499176c835c831070a1c8efeeaad3ce</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:33</sys_created_on>
+        <sys_id>7c99176c835c831070a1c8efeeaad3ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 04:35:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3499176c835c831070a1c8efeeaad3ce"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>5e4f0fe4831c831070a1c8efeeaad36b</sys_id>
+        <latest_snapshot>3499176c835c831070a1c8efeeaad3ce</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=5e4f0fe4831c831070a1c8efeeaad36b^sys_idNOT INc199576c835c831070a1c8efeeaad347"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"c199576c835c831070a1c8efeeaad347","name":"plan","plan_signature":null}}</plan>
+        <plan_id>5e4f0fe4831c831070a1c8efeeaad36b</plan_id>
+        <snapshot>db032f6083dc831070a1c8efeeaad3df</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 04:35:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c199576c835c831070a1c8efeeaad347</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 05:13:41</sys_updated_on>
+        <trigger display_value="">5342232083dc831070a1c8efeeaad38c</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=5e4f0fe4831c831070a1c8efeeaad36b"/>
+</record_update>

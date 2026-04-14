@@ -2,7 +2,7 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>submit_timesheet</action_name>
         <active>true</active>
-        <client>true</client>
+        <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
@@ -30,24 +30,29 @@
         <name>Submit Timesheet</name>
         <onclick>submitTimesheet()</onclick>
         <order>100</order>
-        <script><![CDATA[function submitTimesheet() {
-  if (!g_form.getValue('employee')) {
-    alert('Please select an Employee before submitting.');
-    return;
-  }
-  if (!g_form.getValue('week_start_date')) {
-    alert('Please enter the Week Start Date before submitting.');
-    return;
-  }
-  g_form.setValue('status', 'submitted');
-  g_form.save();
-}
+        <script><![CDATA[(function executeRule(current, previous) {
 
-function onLoad() {
-  if (g_form.getValue('status') !== 'draft') {
-    g_ui_actions.hide('submit_timesheet');
-  }
-}]]></script>
+    // Validate employee is selected
+    if (current.employee.nil()) {
+        gs.addErrorMessage('Please select an Employee before submitting.');
+        current.setAbortAction(true);
+        return;
+    }
+
+    // Validate week start date
+    if (current.week_start_date.nil()) {
+        gs.addErrorMessage('Please enter the Week Start Date before submitting.');
+        current.setAbortAction(true);
+        return;
+    }
+
+    // Submit the timesheet
+    current.status = 'submitted';
+    current.submitted_by = gs.getUserID();
+    current.update();
+    action.setRedirectURL(current);
+
+})(current, previous);]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -58,7 +63,7 @@ function onLoad() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0721cad883d0031070a1c8efeeaad33c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Submit Timesheet</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
@@ -66,7 +71,7 @@ function onLoad() {
         <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
         <sys_update_name>sys_ui_action_0721cad883d0031070a1c8efeeaad33c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-13 08:30:24</sys_updated_on>
+        <sys_updated_on>2026-04-14 05:04:15</sys_updated_on>
         <table>x_1954179_employ_0_timesheet</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
