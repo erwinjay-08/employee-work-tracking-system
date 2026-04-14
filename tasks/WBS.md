@@ -27,16 +27,16 @@ Develop the user interface for employees, managers, and administrators, and impl
 - [x] **Role-Based Access Control Implementation** (done) — medium priority
 
 ### Timesheet Submission and Approval Workflow
-- **Status:** in_progress
+- **Status:** done
 - **Priority:** medium
 - **Due:** N/A
 
 Implement the timesheet submission and approval workflow using ServiceNow's Flow Designer.
 
 #### Tasks
-- [ ] **Timesheet Submission Workflow** (in_progress) — medium priority
-- [ ] **Timesheet Approval Workflow** (in_progress) — medium priority
-- [ ] **Business Rules for Time Calculation** (todo) — medium priority
+- [x] **Timesheet Submission Workflow** (done) — medium priority
+- [x] **Timesheet Approval Workflow** (done) — medium priority
+- [x] **Business Rules for Time Calculation** (done) — medium priority
 
 ### Task Assignment and Tracking
 - **Status:** todo
