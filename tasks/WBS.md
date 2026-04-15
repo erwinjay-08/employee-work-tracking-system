@@ -39,16 +39,16 @@ Implement the timesheet submission and approval workflow using ServiceNow's Flow
 - [x] **Business Rules for Time Calculation** (done) — medium priority
 
 ### Task Assignment and Tracking
-- **Status:** todo
+- **Status:** done
 - **Priority:** medium
 - **Due:** N/A
 
 Implement the task assignment and tracking functionality, allowing managers to assign tasks to employees and monitor their progress.
 
 #### Tasks
-- [ ] **Task Assignment Form Development** (todo) — medium priority
-- [ ] **Task Tracking List Development** (todo) — medium priority
-- [ ] **Automated Task Notifications** (todo) — medium priority
+- [x] **Task Assignment Form Development** (done) — medium priority
+- [x] **Task Tracking List Development** (done) — medium priority
+- [x] **Automated Task Notifications** (done) — medium priority
 
 ### Leave Request Management
 - **Status:** todo
