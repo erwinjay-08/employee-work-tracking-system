@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1954179_employ_0_work_log_entry</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>auto_update_task_actual_hours</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+
+    // Get task ID - handle delete case
+    var taskID = current.task.toString();
+    if (!taskID) {
+        // On delete, check previous record
+        if (previous) {
+            taskID = previous.task.toString();
+        }
+    }
+    
+    if (!taskID) return;
+    
+    // Sum all hours worked for this task
+    var log = new GlideAggregate('x_1954179_employ_0_work_log_entry');
+    log.addQuery('task', taskID);
+    log.addAggregate('SUM', 'hours_worked');
+    log.query();
+    
+    var totalHours = 0;
+    if (log.next()) {
+        totalHours = parseFloat(log.getAggregate('SUM', 'hours_worked')) || 0;
+    }
+    
+    // Update the task's actual hours
+    var task = new GlideRecord('x_1954179_employ_0_task');
+    if (task.get(taskID)) {
+        task.actual_hours = totalHours;
+        task.update();
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 05:44:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b672f8098314031070a1c8efeeaad3c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>auto_update_task_actual_hours</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name>sys_script_b672f8098314031070a1c8efeeaad3c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 12:27:50</sys_updated_on>
+        <template>undefined=^EQ</template>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b672f8098314031070a1c8efeeaad3c7"/>
+</record_update>

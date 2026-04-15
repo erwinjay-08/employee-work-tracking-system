@@ -8,34 +8,34 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>NEW</link_type>
         <map_page/>
-        <mobile_title>Tasks</mobile_title>
+        <mobile_title>Work Log</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_1954179_employ_0_task</name>
-        <order>400</order>
+        <name>x_1954179_employ_0_work_log_entry</name>
+        <order>700</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_1954179_employ_0.employee,x_1954179_employ_0.manager</roles>
+        <roles>x_1954179_employ_0.admin,x_1954179_employ_0.employee,x_1954179_employ_0.manager</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-13 07:00:32</sys_created_on>
+        <sys_created_on>2026-04-15 06:04:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>9301b6d88358031070a1c8efeeaad3e3</sys_id>
+        <sys_id>d477fcc18354031070a1c8efeeaad3e0</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Tasks</sys_name>
+        <sys_name>New Work Log Entry</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
         <sys_policy/>
         <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
-        <sys_update_name>sys_app_module_9301b6d88358031070a1c8efeeaad3e3</sys_update_name>
+        <sys_update_name>sys_app_module_d477fcc18354031070a1c8efeeaad3e0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-15 05:53:12</sys_updated_on>
+        <sys_updated_on>2026-04-15 06:04:28</sys_updated_on>
         <timeline_page/>
-        <title>Tasks</title>
+        <title>New Work Log Entry</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
