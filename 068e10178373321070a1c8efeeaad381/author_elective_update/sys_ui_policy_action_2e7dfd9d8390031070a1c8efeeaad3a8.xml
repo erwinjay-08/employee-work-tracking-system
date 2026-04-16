@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>approval_notes</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 05:48:37</sys_created_on>
+        <sys_id>2e7dfd9d8390031070a1c8efeeaad3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>approval_notes</sys_name>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name>sys_ui_policy_action_2e7dfd9d8390031070a1c8efeeaad3a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 05:48:37</sys_updated_on>
+        <table>x_1954179_employ_0_leave_request</table>
+        <ui_policy display_value="For employee's view">3a0db19d8390031070a1c8efeeaad3bd</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=2e7dfd9d8390031070a1c8efeeaad3a8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</application>
+        <file_path/>
+        <instance_id>37d619413bcb4ad8677f04e0b5e45a31</instance_id>
+        <instance_name>dev276783</instance_name>
+        <name>sys_ui_policy_action_2e7dfd9d8390031070a1c8efeeaad3a8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>approval_notes</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-16 05:48:37</sys_created_on><sys_id>2e7dfd9d8390031070a1c8efeeaad3a8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>approval_notes</sys_name><sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package><sys_policy/><sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope><sys_update_name>sys_ui_policy_action_2e7dfd9d8390031070a1c8efeeaad3a8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-16 05:48:37</sys_updated_on><table>x_1954179_employ_0_leave_request</table><ui_policy display_value="For employee's view">3a0db19d8390031070a1c8efeeaad3bd</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=2e7dfd9d8390031070a1c8efeeaad3a8"/></record_update>]]></payload>
+        <payload_hash>-1059864843</payload_hash>
+        <record_name>approval_notes</record_name>
+        <reverted_from/>
+        <source>469f0ac18310431070a1c8efeeaad381</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 05:48:37</sys_created_on>
+        <sys_id>e67dfd9d8390031070a1c8efeeaad3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d94d5919e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 05:48:37</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>a67dfd9d42900310c58ab594e682c2ab</update_guid>
+        <update_guid_history>a67dfd9d42900310c58ab594e682c2ab:-1059864843</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 05:52:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>135b1f541c6545b4afe0332fe90db391</sys_id>
+        <sys_metadata>2e7dfd9d8390031070a1c8efeeaad3a8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>approval_notes</sys_name>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_parent display_value="For employee's view">3a0db19d8390031070a1c8efeeaad3bd</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_scope_delete display_value="">7d1f886776b146d2aee7b1b1f3a5f2a4</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_2e7dfd9d8390031070a1c8efeeaad3a8</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_2e7dfd9d8390031070a1c8efeeaad3a8">e67dfd9d8390031070a1c8efeeaad3ac</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 05:52:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

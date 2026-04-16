@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="status" table="x_1954179_employ_0_leave_request">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="leave_balance" table="x_1954179_employ_0_leave_request">
         <active>true</active>
         <array>false</array>
         <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice>3</choice>
+        <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Status</column_label>
+        <column_label>Leave Balance</column_label>
         <comments/>
         <create_roles/>
-        <default_value>draft</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -21,21 +21,21 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>status</element>
+        <element>leave_balance</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>32</max_length>
         <name>x_1954179_employ_0_leave_request</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_1954179_employ_0_employee">x_1954179_employ_0_employee</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -46,14 +46,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-28 08:37:20</sys_created_on>
-        <sys_name>Status</sys_name>
+        <sys_created_on>2026-04-16 04:54:25</sys_created_on>
+        <sys_name>Leave Balance</sys_name>
         <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
         <sys_policy/>
         <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
-        <sys_update_name>sys_dictionary_x_1954179_employ_0_leave_request_status</sys_update_name>
+        <sys_update_name>sys_dictionary_x_1954179_employ_0_leave_request_leave_balance</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-16 05:49:07</sys_updated_on>
+        <sys_updated_on>2026-04-16 04:54:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
