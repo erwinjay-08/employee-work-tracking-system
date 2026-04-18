@@ -16,23 +16,25 @@
     var start = g_form.getValue('start_date');
     var end = g_form.getValue('end_date');
     
-    if (start && end) {
-        var s = new GlideDate();
-        s.setValue(start);
-        var e = new GlideDate();
-        e.setValue(end);
-        
-        var count = 0;
-        var cur = new GlideDate();
-        cur.setValue(start);
-        
-        while (cur.compareTo(e) <= 0) {
-            var dow = cur.getDayOfWeekUTC();
-            if (dow !== 1 && dow !== 7) count++;
-            cur.addDaysUTC(1);
-        }
-        g_form.setValue('total_days', count);
+    if (!start || !end) return;
+    
+    var s = new Date(start);
+    var e = new Date(end);
+    
+    if (isNaN(s.getTime()) || isNaN(e.getTime())) return;
+    if (e < s) {
+        g_form.setValue('total_days', 0);
+        return;
     }
+    
+    var count = 0;
+    var cur = new Date(s);
+    while (cur <= e) {
+        var dow = cur.getDay();
+        if (dow !== 0 && dow !== 6) count++;
+        cur.setDate(cur.getDate() + 1);
+    }
+    g_form.setValue('total_days', count);
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -40,7 +42,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9341b9158350031070a1c8efeeaad3da</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>calculate_leave_days_client</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
@@ -48,7 +50,7 @@
         <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
         <sys_update_name>sys_script_client_9341b9158350031070a1c8efeeaad3da</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-16 05:39:57</sys_updated_on>
+        <sys_updated_on>2026-04-18 07:49:40</sys_updated_on>
         <table>x_1954179_employ_0_leave_request</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

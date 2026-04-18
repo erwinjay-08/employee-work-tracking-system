@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">31c1f4428314031070a1c8efeeaad38c</canvas>
+        <component display_value="Vertical bar">23051643b7e03010097cb81cde11a910</component>
+        <component_props>{"additionalGroupByConfig":[],"allowChangeDateRange":false,"applyDateRange":false,"bareBorder":false,"cacheExpirationTime":0,"chartVariation":"stacked","colorConfig":{"type":"palette","palette":"4566db19d7100200b96d45a3ce610319"},"componentId":"j2v5l2xh","configPropModifiers":{},"configVersion":"23.0.0-ci-SNAPSHOT","contextMenuActions":[],"dataLabelPosition":"middle","dataSources":[{"allowRealTime":true,"filterQuery":"","dataCategories":["group","simple","trend"],"id":"dGFibGVpbmNpZGVudDE3MTI2NzI1NDI2OTY=","isDatabaseView":false,"preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"sourceType":"table","tableOrViewName":"x_1954179_employ_0_timesheet","label":"Timesheet"}],"dateFormat":"default","emptyStateAlignment":"vertical-centered","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateHeading":"No data available.","emptyStateIllustration":"no-data","enableClickAndStay":false,"enableCustomEmptyState":false,"enableDrilldown":true,"enableRealTimeUpdate":false,"filterConfigurations":[],"followFilters":true,"groupBy":[{"disableRanges":false,"groupBy":[{"dataSource":"dGFibGVpbmNpZGVudDE3MTI2NzI1NDI2OTY=","groupByField":"employee","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":10,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false}],"headingLevel":2,"hideDevSettings":false,"hideMatrixAggregate":false,"legendExpandToFit":false,"legendHorizontalAlignment":"center","legendPosition":"bottom","metrics":[{"aggregateFunction":"SUM","axisId":"primary","dataSource":"dGFibGVpbmNpZGVudDE3MTI2NzI1NDI2OTY=","id":"ZEdGaWJHVnBibU5wWkdWdWRERTNNVEkyTnpJMU5ESTJPVFk9MTcxMjY3MjU0NDYxNg==","numberFormat":{"customFormat":false},"aggregateField":"total_regular_hours"}],"newReporting":false,"numberOfPeriods":3,"period":"M","scoreType":null,"selectedElements":[],"showAbsolutePeriod":false,"showAdditionalGroupBySelector":false,"showBorder":true,"showCacheTime":true,"showChange":false,"showChangeFrom":"previous","showChangePercentage":false,"showClosestSeriesOnHover":true,"showComment":false,"showConfidenceBand":false,"showDataLabels":false,"showDataPassthrough":false,"showDataTable":false,"showDateRangeByDefault":false,"showFilterIcon":true,"showFirstGroupAggregate":false,"showForecast":false,"showForecastRange":false,"showGapPercentage":false,"showHeader":true,"showHeaderSeparator":false,"showLegend":false,"showLegendValue":false,"showMaximumRange":false,"showMetricLabel":false,"showOverlappingLabels":false,"showSecondGroupAggregate":false,"showSparkline":false,"showStackedValues":"none","showSubAggregate":false,"showTarget":false,"showThreshold":false,"showTotalAggregate":false,"showTrend":false,"sortBy":"value","sortByOrder":"desc","telemetry":null,"useDataCache":false,"wrapTitle":false,"xAxisMaxLabelSize":100,"xAxisTruncationType":"end","xAxisWrapLabels":false,"yAxisHidden":false,"yAxisPosition":"bottom","yAxisShowGrid":true,"yAxisStyle":"clean","filterPerMetric":[],"allowAdditionalGroupByPerMetric":false,"headerTitle":"Monthly Employee Attendance","rangesConfig":{},"headerColor":{"themeVariable":"--now-color_alert--info-0","value":"#bddcf2"},"titleColor":{"themeVariable":"--now-color_text--primary","value":"#10171a"}}</component_props>
+        <h>14</h>
+        <name>Monthly Employee Attendance</name>
+        <stored_component display_value="Monthly Employee Attendance">55d270828314031070a1c8efeeaad354</stored_component>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-18 08:20:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ea73b4468314031070a1c8efeeaad331</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Monthly Employee Attendance</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Work Tracking System" source="x_1954179_employ_0">068e10178373321070a1c8efeeaad381</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Work Tracking System">068e10178373321070a1c8efeeaad381</sys_scope>
+        <sys_update_name>par_dashboard_widget_ea73b4468314031070a1c8efeeaad331</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-18 08:39:24</sys_updated_on>
+        <visualization/>
+        <w>20</w>
+        <widget_props/>
+        <x>1</x>
+        <y>7</y>
+    </par_dashboard_widget>
+</record_update>

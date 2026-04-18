@@ -7,7 +7,7 @@
                 <element inactive_on_update="false" label="Vacation Leave" sequence="0" value="vacation_leave"/>
             </choice>
         </element>
-        <element label="Leave Balance" max_length="32" name="leave_balance" reference="x_1954179_employ_0_employee" type="reference"/>
+        <element label="Leave Balance" max_length="32" name="leave_balance" type="decimal"/>
         <element label="Employee" max_length="32" name="employee" reference="x_1954179_employ_0_employee" type="reference"/>
         <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
         <element label="Reason" max_length="1000" name="reason" type="string"/>
