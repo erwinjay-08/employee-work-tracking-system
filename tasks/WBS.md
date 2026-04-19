@@ -51,26 +51,26 @@ Implement the task assignment and tracking functionality, allowing managers to a
 - [x] **Automated Task Notifications** (done) — medium priority
 
 ### Leave Request Management
-- **Status:** todo
+- **Status:** done
 - **Priority:** medium
 - **Due:** N/A
 
 Implement the leave request management functionality, allowing employees to submit leave requests and managers to approve or reject them.
 
 #### Tasks
-- [ ] **Leave Request Form Development** (todo) — medium priority
-- [ ] **Leave Approval Workflow Implementation** (todo) — medium priority
-- [ ] **Leave Balance Calculation** (todo) — medium priority
+- [x] **Leave Request Form Development** (done) — medium priority
+- [x] **Leave Approval Workflow Implementation** (done) — medium priority
+- [x] **Leave Balance Calculation** (done) — medium priority
 
 ### Reporting and Dashboarding
-- **Status:** todo
+- **Status:** done
 - **Priority:** medium
 - **Due:** N/A
 
 Develop reports and dashboards to provide insights into employee attendance, productivity, and task completion rates.
 
 #### Tasks
-- [ ] **Attendance Report Development** (todo) — medium priority
-- [ ] **Productivity Report Development** (todo) — medium priority
-- [ ] **Dashboard Creation** (todo) — medium priority
+- [x] **Attendance Report Development** (done) — medium priority
+- [x] **Productivity Report Development** (done) — medium priority
+- [x] **Dashboard Creation** (done) — medium priority
 
